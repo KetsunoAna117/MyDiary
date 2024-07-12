@@ -9,8 +9,8 @@ import Foundation
 import SwiftData
 
 protocol Journal: Identifiable, Hashable {
-    var id: UUID { get }
-    var title: String { get set }
-    var caption: String { get set }
+    @Attribute(.unique) var id: UUID { get }
+    var title: String { get }
+    var caption: String { get }
     var type: JournalType { get }
 }

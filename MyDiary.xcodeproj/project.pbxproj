@@ -18,6 +18,10 @@
 		3AC498232C3E6B1700AA6A85 /* PhotoJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC498222C3E6B1700AA6A85 /* PhotoJournal.swift */; };
 		3AC498252C3EC3DB00AA6A85 /* TextJournal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC498242C3EC3DB00AA6A85 /* TextJournal.swift */; };
 		3AC4982B2C3EC95900AA6A85 /* DiaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4982A2C3EC95900AA6A85 /* DiaryCard.swift */; };
+		3AC4982D2C3ECE4D00AA6A85 /* CreateTextJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4982C2C3ECE4D00AA6A85 /* CreateTextJournalView.swift */; };
+		3AC498302C3ECE7000AA6A85 /* TextJournalViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC4982F2C3ECE7000AA6A85 /* TextJournalViewmodel.swift */; };
+		3AC498322C3F996C00AA6A85 /* CreatePhotoJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC498312C3F996C00AA6A85 /* CreatePhotoJournalView.swift */; };
+		3AC498342C3F999800AA6A85 /* PhotoJournalViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC498332C3F999800AA6A85 /* PhotoJournalViewmodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		3AC498222C3E6B1700AA6A85 /* PhotoJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournal.swift; sourceTree = "<group>"; };
 		3AC498242C3EC3DB00AA6A85 /* TextJournal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextJournal.swift; sourceTree = "<group>"; };
 		3AC4982A2C3EC95900AA6A85 /* DiaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryCard.swift; sourceTree = "<group>"; };
+		3AC4982C2C3ECE4D00AA6A85 /* CreateTextJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTextJournalView.swift; sourceTree = "<group>"; };
+		3AC4982F2C3ECE7000AA6A85 /* TextJournalViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextJournalViewmodel.swift; sourceTree = "<group>"; };
+		3AC498312C3F996C00AA6A85 /* CreatePhotoJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePhotoJournalView.swift; sourceTree = "<group>"; };
+		3AC498332C3F999800AA6A85 /* PhotoJournalViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalViewmodel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 		3AC498072C3E676A00AA6A85 /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				3AC4982E2C3ECE5B00AA6A85 /* Viewmodel */,
 				3AC498262C3EC92F00AA6A85 /* Views */,
 				3AC4981D2C3E69BB00AA6A85 /* SharedData */,
 				3AC4981A2C3E696200AA6A85 /* Model */,
@@ -124,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				3AC498272C3EC93500AA6A85 /* Component */,
+				3AC4982C2C3ECE4D00AA6A85 /* CreateTextJournalView.swift */,
+				3AC498312C3F996C00AA6A85 /* CreatePhotoJournalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +145,15 @@
 				3AC4982A2C3EC95900AA6A85 /* DiaryCard.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		3AC4982E2C3ECE5B00AA6A85 /* Viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				3AC4982F2C3ECE7000AA6A85 /* TextJournalViewmodel.swift */,
+				3AC498332C3F999800AA6A85 /* PhotoJournalViewmodel.swift */,
+			);
+			path = Viewmodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,14 +227,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AC4980B2C3E676A00AA6A85 /* ContentView.swift in Sources */,
+				3AC4982D2C3ECE4D00AA6A85 /* CreateTextJournalView.swift in Sources */,
 				3AC498232C3E6B1700AA6A85 /* PhotoJournal.swift in Sources */,
 				3AC4982B2C3EC95900AA6A85 /* DiaryCard.swift in Sources */,
 				3AC498212C3E6ABF00AA6A85 /* VideoJournal.swift in Sources */,
 				3AC4981F2C3E69C900AA6A85 /* SharedJournalData.swift in Sources */,
+				3AC498342C3F999800AA6A85 /* PhotoJournalViewmodel.swift in Sources */,
 				3AC498252C3EC3DB00AA6A85 /* TextJournal.swift in Sources */,
 				3AC4981C2C3E697200AA6A85 /* Journal.swift in Sources */,
 				3AC498192C3E685300AA6A85 /* JournalType.swift in Sources */,
+				3AC498302C3ECE7000AA6A85 /* TextJournalViewmodel.swift in Sources */,
 				3AC498092C3E676A00AA6A85 /* MyDiaryApp.swift in Sources */,
+				3AC498322C3F996C00AA6A85 /* CreatePhotoJournalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

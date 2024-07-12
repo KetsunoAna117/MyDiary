@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftData
 
-struct VideoJournal: Journal, Hashable {
-    var id: UUID
+@Model
+class VideoJournal: Journal, Hashable {
+    @Attribute(.unique) var id: UUID
     var title: String
     var caption: String
     var type: JournalType

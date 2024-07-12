@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum JournalType {
+enum JournalType: Hashable, Codable, Equatable {
     case text
     case photo
     case video

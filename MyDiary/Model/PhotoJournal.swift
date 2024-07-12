@@ -7,22 +7,22 @@
 
 import Foundation
 import UIKit
+import SwiftData
 
-struct PhotoJournal: Journal, Hashable {
-    var id: UUID
+@Model
+class PhotoJournal: Journal, Hashable {
+    @Attribute(.unique) var id: UUID
     var title: String
     var caption: String
     var type: JournalType
     var photoURL: URL
-    var photoIMG: UIImage?
     
-    init(title: String, caption: String, photoURL: URL, photoIMG: UIImage? = nil) {
+    init(title: String, caption: String, photoURL: URL) {
         self.id = UUID()
         self.title = title
         self.caption = caption
         self.type = .photo
         self.photoURL = photoURL
-        self.photoIMG = photoIMG
     }
     
     
